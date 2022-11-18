@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style expanded --no-source-map"
+  },
+  "dependencies": {
+    "sass": "^1.54.8"
+  }
+}
