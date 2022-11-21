@@ -1,0 +1,32 @@
+.infos{
+    &__header{
+        background : $background-dark;
+        display : flex;
+        justify-content: center;
+        box-shadow : inset 0px 3px 3px rgb(0 0 0 / 10%);
+        &__center{
+            padding : 15px 0;
+            input{
+                background : $background-dark;
+                border : none;
+                width : 140px; /* a demander */
+                font-size : 18px;
+            }
+            i{
+                margin-right : 10px;
+            }
+        }
+    }
+    &__content{
+        background : $background-light;
+        text-align : center;
+        h2{
+            padding : 40px 65px 0px 65px;
+        }
+        p{
+            font-size : 18px;
+            font-weight: 300;
+            padding : 10px 30px 30px 30px;
+        }
+    }
+}

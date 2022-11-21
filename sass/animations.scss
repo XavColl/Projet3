@@ -1,0 +1,50 @@
+.appears{
+    opacity : 0;
+    animation: appear 1s forwards;
+}
+
+.appear{
+    opacity : 0;
+    animation : appear 3s forwards;
+}
+
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity : 1;
+    }
+
+}
+
+@keyframes disappear{
+    0%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        opacity : 0;
+    }
+
+}
+@keyframes load{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(1000deg);
+    }
+}
+
+@for $i from 1 through 11{
+    .appear-#{$i} {
+        animation-delay: ($i * 300ms);
+    }
+}

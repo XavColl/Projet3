@@ -1,0 +1,14 @@
+button{
+    margin-bottom : 60px;
+    border-radius: 50px;
+    padding : 15px;
+    border : none;
+    color : #FFFFFF;
+    background : $background-gradient;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
+    transition : 0.4s;
+    &:hover{
+        opacity : 0.8;
+        box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.3);
+    }
+}

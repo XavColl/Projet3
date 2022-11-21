@@ -1,0 +1,121 @@
+.restaurant-container{
+    text-align : center;
+    border-radius : 30px 30px 0 0;
+    background : $background-light;
+    position : relative;
+    top : -50px;
+    margin-bottom : -50px;
+    .title-restaurant{
+        text-align : left;
+        padding-top : 30px;
+        padding-left : 15px;
+        display : flex;
+        h1{
+            font-family: 'Shrikhand';
+            font-size: 24px;
+            font-weight : 500;
+            flex : 1;
+            padding-bottom : 10px;
+        }
+        .pos{
+            font-size: 24px;
+            .none{
+                opacity : 0;
+                position : relative;
+                left : -24px;
+                transition : 0.3s;
+                background: linear-gradient(0deg, rgba(147,86,220,1), rgba(255,121,218,1) 100%);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .full-menu{
+        text-align : left;
+        display : flex;
+        flex-direction: column;
+        .restaurant-section{
+            padding-top : 20px;
+            padding-left : 15px;
+            h2{
+                font-size : 16px;
+                text-transform: uppercase;
+                font-weight : 300;
+                padding-bottom : 10px;
+                &::after{
+                    content : "";
+                    display : block;
+                    background-color : rgb(0, 199, 189);
+                    width : 40px;
+                    height : 2px;
+                    margin-top : 5px;
+                }
+            }
+            .dish{
+                margin-right : 15px;
+                background-color: #FFFFFF;
+                border-radius : 15px;
+                margin-bottom : 10px;
+                display : flex;
+                box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
+                &__info{
+                    flex : 10;
+                    white-space : nowrap;
+                    overflow : hidden;
+                    h3{
+                        overflow : hidden;
+                        text-overflow : ellipsis;
+                        padding : 10px;
+                    }
+                    p{
+                        overflow : hidden;
+                        text-overflow : ellipsis;
+                        padding : 0 10px 10px 10px;
+                        font-weight : 300;
+                    }
+                }
+                h4{
+                    flex : 1;
+                    padding-top : 40px;
+                    margin-right : 20px;
+                }
+                &__validation{
+                    border-radius : 0 15px 15px 0;
+                    text-align : center;
+                    flex : 0;
+                    opacity : 0;
+                    flex : 0;
+                    transition : 0.4s;
+                    i{
+                        padding-top : 20px;
+                        color : white;
+                        margin : auto;
+                    }
+                }
+                &:hover > .dish__validation{
+                    flex : 3;
+                    background-color : $background-green;
+                    opacity : 1;
+                    font-size : 30px;
+                }
+            }
+        }
+    }
+    button{
+        margin-top : 30px;
+        padding-left : 40px;
+        padding-right : 40px;
+    }
+}
+
+@media screen and (min-width : 900px){
+    .full-menu{
+        flex-direction : row !important;
+    }
+    .restaurant-section{
+        flex : 1;
+    }
+}

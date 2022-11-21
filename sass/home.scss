@@ -1,0 +1,91 @@
+.home{
+    &-content{
+    display : flex;
+    flex-direction : column;
+    }
+    background-color : $background-light;
+    padding-top : 40px;
+    padding-bottom : 50px;
+    h2{
+        padding-left : 15px;
+    }
+    &__restaurant{
+        cursor: pointer;
+        box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
+        border-radius : 20px;
+        background : #FFFFFF;
+        margin : 15px;
+        height : 295px;
+        img{
+            border-radius : 20px 20px 0 0;
+            height : 200px;
+            width : 100%;
+            object-fit : cover;
+        }
+        &__infos{
+            display : flex;
+            padding-left : 15px;
+            &__header{
+                flex : 8;
+                white-space : nowrap;
+                overflow : hidden;
+                h3{
+                    padding-top : 20px;
+                    overflow : hidden;
+                    text-overflow : ellipsis;
+                }
+                p{
+                    padding-top : 10px;
+                    font-size : 20px;
+                    font-weight : 300;
+                    overflow : hidden;
+                    text-overflow : ellipsis;
+                }
+            }
+            .like{
+                padding-top : 20px;
+                font-weight : 300;
+                .none{
+                    opacity : 0;
+                    position : relative;
+                    left : -35.5px;
+                    transition : 0.3s;
+                    background: linear-gradient(0deg, rgba(147,86,220,1), rgba(255,121,218,1) 100%);
+                    -webkit-text-fill-color: transparent;
+                    -webkit-background-clip: text;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .new{
+            position : relative;
+            top : -260px;
+            right : -65%;
+            background-color : $background-green;
+            max-width : 80px;
+            width :25%;
+            padding : 10px;
+            border-radius : 5px;
+            p{
+                text-align : center;
+                color : #1f8f75;
+                font-size : 20px;
+                font-weight : 500;
+            }
+        }
+    }
+}
+@media screen and (min-width : 900px){
+    .home-content{
+        flex-direction : row;
+    }
+    .home__restaurant{
+        flex : 1;
+    }
+    .new{
+        right : -60%;
+        width : 30%;
+    }
+}
