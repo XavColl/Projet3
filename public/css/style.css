@@ -16,10 +16,10 @@ header h1 {
 header .header-link i {
   position: absolute;
   font-size: 20px;
-  left: 15px;
+  left: 25px;
   top: 20px;
 }
-header .header-link i:checked {
+header .header-link i:visited {
   color: #000000;
 }
 
