@@ -19,7 +19,7 @@ header .header-link i {
   left: 25px;
   top: 20px;
 }
-header .header-link i:visited {
+header .header-link:visited i {
   color: #000000;
 }
 
