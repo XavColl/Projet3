@@ -38,11 +38,11 @@
         }
     }
     .full-menu{
-        width : 100%;
         text-align : left;
         display : flex;
         flex-direction: column;
         .restaurant-section{
+            min-width : 0px;
             flex : 1;
             padding-top : 20px;
             padding-left : 15px;
@@ -72,20 +72,22 @@
                     flex: 1;
                     display : flex;
                     justify-content : space-between;
+                    min-width : 0px;
                 }
                 &__info{
+                    min-width : 0px;
                     display : flex;
-                    flex-direction : column;
+                    flex-direction: column;
                     h3{
+                        overflow : hidden;
                         white-space : nowrap;
                         text-overflow : ellipsis;
-                        overflow : hidden;
                         padding : 10px;
                     }
                     p{
+                        overflow : hidden;
                         white-space : nowrap;
                         text-overflow : ellipsis;
-                        overflow : hidden;
                         padding : 0 10px 10px 10px;
                         font-weight : 300;
                     }
