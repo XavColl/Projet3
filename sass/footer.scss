@@ -10,17 +10,16 @@ footer{
         font-weight : 400;
     }
     div{
-        font-weight : 300;
+        
         display : flex;
         padding-bottom : 5px;
         i{
-            flex : 1;
+            width : 30px;
             
         }
         p{
-            flex : 20;
+            font-weight : 400;
         }
-        
     }
     p{
         font-weight : 300;
@@ -30,18 +29,5 @@ footer{
         font-weight : 300;
         text-decoration : none;
         color : white;
-    }
-}
-
-@media screen and (min-width : 900px){
-    footer{
-        div{
-            p{
-                flex : 40;
-            }
-            i{
-                flex : 1;
-            }
-        }
     }
 }

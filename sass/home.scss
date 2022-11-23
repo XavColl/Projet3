@@ -15,7 +15,7 @@
         border-radius : 20px;
         background : #FFFFFF;
         margin : 15px;
-        height : 295px;
+        height : 290px;
         img{
             border-radius : 20px 20px 0 0;
             height : 200px;
@@ -30,12 +30,12 @@
                 white-space : nowrap;
                 overflow : hidden;
                 h3{
-                    padding-top : 20px;
+                    padding-top : 15px;
                     overflow : hidden;
                     text-overflow : ellipsis;
                 }
                 p{
-                    padding-top : 10px;
+                    padding-top : 5px;
                     font-size : 20px;
                     font-weight : 300;
                     overflow : hidden;
@@ -44,11 +44,16 @@
             }
             .like{
                 padding-top : 20px;
-                font-weight : 300;
+                font-weight : 100;
+                font-size : 12px;
+                transform : scaleY(1.2);
+                i{
+                    -webkit-text-stroke: 0.8px white;
+                }
                 .none{
                     opacity : 0;
                     position : relative;
-                    left : -35.5px;
+                    left : -27.7px;
                     transition : 0.3s;
                     background: linear-gradient(0deg, rgba(147,86,220,1), rgba(255,121,218,1) 100%);
                     -webkit-text-fill-color: transparent;
@@ -59,22 +64,26 @@
                 }
             }
         }
-        .new{
+        .contain-new{
+            display : flex;
+            justify-content: right;
             position : relative;
             top : -260px;
-            right : -65%;
-            background-color : $background-green;
-            max-width : 80px;
-            width :25%;
-            padding : 10px;
-            border-radius : 5px;
-            p{
-                text-align : center;
-                color : #1f8f75;
-                font-size : 20px;
-                font-weight : 500;
+            padding-right : 15px;
+            .new{
+                background-color : $background-green;
+                width :80px;
+                padding : 10px;
+                border-radius : 5px;
+                p{
+                    text-align : center;
+                    color : #1f8f75;
+                    font-size : 20px;
+                    font-weight : 500;
+                }
             }
         }
+        
     }
 }
 @media screen and (min-width : 900px){

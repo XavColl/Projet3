@@ -19,6 +19,10 @@
         }
         .pos{
             font-size: 24px;
+            transform : scaleY(1.2);
+            i{
+                -webkit-text-stroke: 0.8px white;
+            }
             .none{
                 opacity : 0;
                 position : relative;
@@ -34,10 +38,12 @@
         }
     }
     .full-menu{
+        width : 100%;
         text-align : left;
         display : flex;
         flex-direction: column;
         .restaurant-section{
+            flex : 1;
             padding-top : 20px;
             padding-left : 15px;
             h2{
@@ -55,51 +61,65 @@
                 }
             }
             .dish{
+                overflow: hidden;
                 margin-right : 15px;
                 background-color: #FFFFFF;
                 border-radius : 15px;
                 margin-bottom : 10px;
                 display : flex;
                 box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
+                &__content{
+                    flex: 1;
+                    display : flex;
+                    justify-content : space-between;
+                }
                 &__info{
-                    flex : 10;
-                    white-space : nowrap;
-                    overflow : hidden;
+                    display : flex;
+                    flex-direction : column;
                     h3{
-                        overflow : hidden;
+                        white-space : nowrap;
                         text-overflow : ellipsis;
+                        overflow : hidden;
                         padding : 10px;
                     }
                     p{
-                        overflow : hidden;
+                        white-space : nowrap;
                         text-overflow : ellipsis;
+                        overflow : hidden;
                         padding : 0 10px 10px 10px;
                         font-weight : 300;
                     }
                 }
                 h4{
-                    flex : 1;
                     padding-top : 40px;
                     margin-right : 20px;
                 }
                 &__validation{
                     border-radius : 0 15px 15px 0;
                     text-align : center;
-                    flex : 0;
+                    width : 0;
                     opacity : 0;
                     flex : 0;
-                    transition : 0.4s;
+                     transition : 0.2s;
                     i{
-                        padding-top : 20px;
+                        transform : rotate(180deg);
+                        font-size : 1px;
+                        padding-top : 24px;
                         color : white;
                         margin : auto;
+                        transition : transform 0.5s;
                     }
                 }
                 &:hover > .dish__validation{
-                    flex : 3;
+                    width : 100px;
                     background-color : $background-green;
                     opacity : 1;
-                    font-size : 30px;
+                    i{
+                        transform: rotate(0deg);
+                        margin : 24px 20px 0 20px;
+                        padding : 0;
+                        font-size : 24px;
+                    }
                 }
             }
         }
@@ -114,8 +134,5 @@
 @media screen and (min-width : 900px){
     .full-menu{
         flex-direction : row !important;
-    }
-    .restaurant-section{
-        flex : 1;
     }
 }

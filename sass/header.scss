@@ -11,6 +11,9 @@ header{
             font-size : 20px;
             left : 15px;
             top : 20px;
+            &:checked{
+                color : #000000;
+            }
         }
     }
 }

@@ -1,11 +1,13 @@
 button{
     margin-bottom : 60px;
     border-radius: 50px;
-    padding : 15px;
+    padding : 15px 20px;
+    font-size : 18px;
     border : none;
     color : #FFFFFF;
     background : $background-gradient;
     box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
+    cursor : pointer;
     transition : 0.4s;
     &:hover{
         opacity : 0.8;
