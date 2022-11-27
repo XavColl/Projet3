@@ -134,7 +134,7 @@ header .header-link:visited i {
   border-radius: 20px;
   background: #FFFFFF;
   margin: 15px;
-  height: 290px;
+  height: 285px;
 }
 .home__restaurant img {
   border-radius: 20px 20px 0 0;
@@ -178,6 +178,7 @@ header .header-link:visited i {
   left: -27.7px;
   transition: 0.3s;
   background: linear-gradient(0deg, rgb(147, 86, 220), rgb(255, 121, 218) 100%);
+  -webkit-text-stroke: 0px;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -193,14 +194,14 @@ header .header-link:visited i {
 }
 .home__restaurant .contain-new .new {
   background-color: #99E2D0;
-  width: 80px;
-  padding: 10px;
+  width: 70px;
+  padding: 7px;
   border-radius: 5px;
 }
 .home__restaurant .contain-new .new p {
   text-align: center;
   color: #1f8f75;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -314,6 +315,7 @@ footer a {
   margin-top: 5px;
 }
 .restaurant-container .full-menu .restaurant-section .dish {
+  cursor: pointer;
   overflow: hidden;
   margin-right: 15px;
   background-color: #FFFFFF;
@@ -356,7 +358,7 @@ footer a {
   width: 0;
   opacity: 0;
   flex: 0;
-  transition: 0.2s;
+  transition: 0.4s;
 }
 .restaurant-container .full-menu .restaurant-section .dish__validation i {
   transform: rotate(180deg);

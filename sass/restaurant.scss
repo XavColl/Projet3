@@ -61,6 +61,7 @@
                 }
             }
             .dish{
+                cursor : pointer;
                 overflow: hidden;
                 margin-right : 15px;
                 background-color: #FFFFFF;
@@ -102,7 +103,7 @@
                     width : 0;
                     opacity : 0;
                     flex : 0;
-                     transition : 0.2s;
+                     transition : 0.4s;
                     i{
                         transform : rotate(180deg);
                         font-size : 1px;

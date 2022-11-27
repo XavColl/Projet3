@@ -15,7 +15,7 @@
         border-radius : 20px;
         background : #FFFFFF;
         margin : 15px;
-        height : 290px;
+        height : 285px;
         img{
             border-radius : 20px 20px 0 0;
             height : 200px;
@@ -56,6 +56,7 @@
                     left : -27.7px;
                     transition : 0.3s;
                     background: linear-gradient(0deg, rgba(147,86,220,1), rgba(255,121,218,1) 100%);
+                    -webkit-text-stroke: 0px;
                     -webkit-text-fill-color: transparent;
                     -webkit-background-clip: text;
                     &:hover{
@@ -72,13 +73,13 @@
             padding-right : 15px;
             .new{
                 background-color : $background-green;
-                width :80px;
-                padding : 10px;
+                width :70px;
+                padding : 7px;
                 border-radius : 5px;
                 p{
                     text-align : center;
                     color : #1f8f75;
-                    font-size : 20px;
+                    font-size : 18px;
                     font-weight : 500;
                 }
             }
